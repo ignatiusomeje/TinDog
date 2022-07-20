@@ -1,0 +1,219 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+}
+h1,
+.section-heading,
+.pricing .pricing-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* utility classes */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+.white-section {
+  background-color: #fff;
+}
+
+/* navbar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.nav-item {
+  padding: 0 18px;
+}
+
+/* download btn */
+
+.download-btn {
+  margin: 5% 3% 5% 0;
+}
+
+/* title Section */
+
+.title-section .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+.title-section .title-image {
+  width: 20%;
+  position: absolute;
+  transform: rotate(25deg);
+}
+
+/* Features Section */
+
+.features {
+  position: relative;
+}
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+.icon:hover {
+  color: #ff4c68;
+}
+.feature-box {
+  padding: 5%;
+}
+.feature-title {
+  font-size: 1.5rem;
+}
+
+/* Testimonial Section */
+
+.testmonials {
+  background-color: #ef8172;
+  color: white;
+}
+.testmonials .testmonial-text {
+  line-height: 1.5;
+  font-size: 3rem;
+}
+.testmonials .testmonial-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px 20px 20px auto;
+}
+
+/* Press Section */
+.press {
+  padding-bottom: 3%;
+}
+.press .press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 100px;
+}
+.pricing .pricing-column {
+  padding: 3% 2%;
+}
+.pricing .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.pricing .card .d-grid {
+  margin-top: auto;
+}
+.pricing .card {
+  transform: scale(1, 1);
+  transition: all 0.4s ease;
+  transform-origin: top;
+}
+.pricing .card:hover {
+  transform: scale(1.1, 1.2);
+}
+
+/* True Love Section */
+.truelove h1 {
+  width: 80%;
+  margin: auto;
+}
+
+/* footer */
+
+.footer-link i {
+  padding: 8px;
+}
+
+.footer-link i, .nav-item a{
+  transform: scale(1);
+  transition: transform .5s ease-in-out;
+}
+.footer-link i:hover, .nav-item a:hover{
+  transform: scale(1.5);
+}
+
+/* large screen 1091px */
+@media screen and (max-width: 68.188rem) {
+  .title-section .title-image {
+    right: 22%;
+  }
+}
+
+/* medium screen 991px */
+@media screen and (max-width: 61.938rem) {
+  .title-section .title-image {
+    position: static;
+    transform: rotate(0);
+    width: 70%;
+  }
+  .title-section .title-heading {
+    text-align: center;
+  }
+  .title-section .download-btn {
+    margin-bottom: 10%;
+  }
+  .pricing .card:hover {
+    transform: scale(1.1,1);
+  }
+}
+
+/* Medium Screens 500px */
+
+@media screen and (max-width: 31.25rem) {
+  .testmonials .testmonial-text {
+    font-size: 2rem;
+  }
+  .testmonials .testmonial-img {
+    width: 15%;
+  }
+  .press .press-logo {
+    width: 15%;
+    margin: 20px 20px 50%;
+  }
+}
+
+/* Small Screen - 340px */
+@media screen and (max-width: 28.25rem) {
+  .title-section .title-heading {
+    font-size: 2rem;
+  }
+  .title-section .container-fluid {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .press .press-logo {
+    margin: 10px 10px 20px;
+  }
+  .testmonials .testmonial-text{
+    font-size: 1.5rem;
+  }
+  .truelove h1 {
+    width: 100%;
+    font-size: 2rem;
+    /* margin: auto; */
+  }
+  .pricing .section-heading{
+    font-size: 2.5rem;
+  }
+  .pricing{
+    padding: 15px;
+  }
+}
